@@ -24,13 +24,14 @@ export class AppComponent {
 
   counter= 0;
   incre(){
-    
+
     this.counter++;
   }
   decre(){
     this.counter--;
   }
   init(){
+    
 this.counter=0;
   }
 }
