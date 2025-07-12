@@ -28,6 +28,8 @@ export class AppComponent {
   }
   decre(){
     this.counter--;
+
+    
   }
   init(){
 this.counter=0;
