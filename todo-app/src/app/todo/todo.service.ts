@@ -8,7 +8,7 @@ export class TodoService {
   private todos: Todo[] = [
     { id: 1, title: 'Learn Angular', completed: true },
     { id: 2, title: 'Create a Todo App', completed: false },
-    { id: 3, title: 'Deploy the app', completed: false }
+    { id: 3, title: 'Deploy the app', completed: false },
   ];
 
   constructor() { }
