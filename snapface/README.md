@@ -1,59 +1,83 @@
-# Snapface
+# Projet Snapface
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.0.3.
+Ce projet est une application web simple construite avec Angular, permettant aux utilisateurs de partager des "snaps" de visages et de les "snapper" (similaire à un "like").
 
-## Development server
+## Architecture du Projet
 
-To start a local development server, run:
+Le projet suit une architecture modulaire basée sur les composants et services d'Angular.
 
-```bash
-ng serve
-```
+-  snapface/
+│
+├── angular.json
+├── package.json
+├── tsconfig.json
+├── tsconfig.app.json
+├── tsconfig.spec.json
+├── README.md
+│
+├── public/
+│   └── favicon.ico
+│
+├── src/
+│   ├── index.html
+│   ├── main.ts
+│   ├── styles.scss
+│   ├── assets/
+│   │   └── snapface-logo.png
+│   └── app/
+│       ├── app.config.ts
+│       ├── app.html
+│       ├── app.routes.ts
+│       ├── app.scss
+│       ├── app.ts
+│       │
+│       ├── header/
+│       │   ├── header.html
+│       │   ├── header.scss
+│       │   └── header.ts
+│       │
+│       ├── face-snap/
+│       │   ├── face-snap.html
+│       │   ├── face-snap.scss
+│       │   └── face-snap.ts
+│       │
+│       ├── face-snap-list/
+│       │   ├── face-snap-list.html
+│       │   ├── face-snap-list.scss
+│       │   └── face-snap-list.ts
+│       │
+│       ├── single-face-snap/
+│       │   ├── single-face-snap.html
+│       │   ├── single-face-snap.scss
+│       │   └── single-face-snap.ts
+│       │
+│       ├── landing-page/
+│       │   ├── landing-page.html
+│       │   ├── landing-page.scss
+│       │   └── landing-page.ts
+│       │
+│       ├── models/
+│       │   ├── face-snap.ts
+│       │   └── snap-type.type.ts
+│       │
+│       └── service/
+│           └── face-snaps.service.ts
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+## Scripts Disponibles
 
-## Code scaffolding
+Dans le répertoire du projet, vous pouvez exécuter les commandes suivantes :
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+### `npm start`
 
-```bash
-ng generate component component-name
-```
+Lance l'application en mode développement.
+Ouvrez [http://localhost:4200](http://localhost:4200) pour la voir dans votre navigateur.
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+L'application se rechargera automatiquement si vous modifiez un des fichiers sources.
 
-```bash
-ng generate --help
-```
+### `npm run build`
 
-## Building
+Compile l'application pour la production dans le répertoire `dist/`.
 
-To build the project run:
+### `npm test`
 
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Lance le framework de test Karma pour exécuter les tests unitaires.
