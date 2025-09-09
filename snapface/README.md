@@ -36,7 +36,7 @@ Le projet suit une architecture modulaire basée sur les composants et services 
 │       │   ├── header.scss
 │       │   └── header.ts
 │       │
-│       ├── face-snap/
+│       ├── face-snap/  
 │       │   ├── face-snap.html
 │       │   ├── face-snap.scss
 │       │   └── face-snap.ts
