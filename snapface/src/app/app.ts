@@ -1,10 +1,12 @@
 import { Component, OnInit } from '@angular/core';
-import { FaceSnapList } from "./face-snap-list/face-snap-list";
+import { Header } from "./header/header";
+import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
   imports: [
-    FaceSnapList
+    Header,
+    RouterOutlet
 ],
   templateUrl: './app.html',
   styleUrl: './app.scss'
